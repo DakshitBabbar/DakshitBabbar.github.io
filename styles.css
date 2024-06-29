@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "PP Neue Montreal";
+    /*background: rgb(215, 176, 138);
+    background: linear-gradient(
+        7deg,
+        rgba(215, 176, 138, 1.0) 0%,
+        rgba(37, 80, 156, 1.0) 100%
+    );*/
+/*    background:#404040;*/
+/*    background: #D0D0D0;*/
+}
+
+.nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    padding: 0 1em;
+    font-family:  "PP Neue Montreal";
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.upper {
+    position: relative;
+}
+
+.nav {
+    position: fixed;
+    top: -10%;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4em;
+/*    background: rgba(215, 176, 138, 1);*/
+    background: #fff;
+    z-index: 1000;
+    filter: blur(50px);
+    box-shadow: 0px 10px 30px #E0E0E0;
+}
+
+.logo {
+    position: fixed;   
+    font-size: 50px;
+    color: #000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.intro-back {
+    height: 100vh;
+    background: #fff;
+/*    color: #303030;*/
+    color: #D0D0D0;
+    font-family: 'Courier New', monospace;
+    font-weight: 100;
+    font-size: 90px;
+    white-space: nowrap;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 0;
+    line-height: 1.367;
+    filter: blur(3px);
+    z-index: 999;
+}
+
+.right-left{
+    display: flex;
+    animation: right-left 80s infinite linear;
+}
+
+@keyframes right-left{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-400%);
+    }
+}
+
+.left-right{
+    display: flex;
+    animation: left-right 80s infinite linear;
+}
+
+@keyframes left-right{
+    from{
+        transform: translateX(-400%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+.about{
+    width: 100%;
+/*    height: 90vh;*/
+    background: #fff;
+    padding: 0 4em;
+    display: grid;
+    align-items: center; 
+    margin-top: 15em;
+    margin-bottom: 13em;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 110px;
+}
+
+.intro-head{
+    font-family: 'Courier New', monospace;
+    font-weight: 5;
+    font-size: 100px;
+}
+
+.intro p{
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 17.5px;
+}
+
+.portrait {
+    width: 100%;
+    border-radius: 7%;
+/*    box-shadow: 0px 10px 10px #D0D0D0;*/
+    float: right;
+}
+
+.skills{
+    width: 100%;
+    height: 60vh;
+/*    background: #fff;*/
+    padding: 0 4em;
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr;
+    column-gap: 110px;
+/*    margin-top: 12em;*/
+    background: #E0E0E0;
+}
+
+.skills h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: #EDF6E0;
+    font-size: 300px;
+}
+
+.skills p{
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 17.5px;
+}
+
+.projects {
+/*    width: 100%;*/
+/*    height: 60vh;*/
+
+    background: #fff;
+/*    padding: 0 5px;*/
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+
+.projects-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects-title {
+    text-align: center;
+    margin-bottom: 130px;
+    font-family: 'Courier New', monospace;
+    font-weight: 5;
+    font-size: 70px;
+}
+
+.project-card {
+    position: relative;
+    text-align: center;
+    width: 29.7em;
+    height: 45em;
+    background: #F8F8F8;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px #8b8eaf;
+/*    padding: 20px;*/
+    margin: 5px;
+    overflow: hidden;
+}
+
+.project-card a{
+    position: absolute;
+    bottom: 30px;
+    left: 2em;
+}
+
+.btn {
+    background: #0070c9;
+    color: #fff;
+    padding: 8px 0px;
+    width: 415.2px;
+    height: 35px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+/*    align-items: center;*/
+}
+
+.project-pic {
+    width: 29.7em;
+    height: 300px;
+/*    filter: blur(5px);*/
+/*    border-radius: 4px;*/
+}
+
+.details {
+    position: absolute;
+    top: 330px;
+    left: 30px;
+    width: 415.2px;
+    color: #000;
+}
+
+.details-light {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 415.2px;
+    color: #fff;
+}
+
+.project-details {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 17.5px;
+    padding: 20px;
+}
+
+.music{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 70vh;
+    margin-bottom: 130px;
+}
+
+.music-background{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 70vh;
+    filter: blur(5px);
+}
+
+.music-details{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    height: 60vh;
+}
+
+.music-details h1{
+    font-family: 'Snell Roundhand', cursive;
+    font-weight: 900;
+    color: #000;
+    font-size: 120px;
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.gallery-wrap{
+    padding: 0 12em;
+}
+
+.gallery {
+/*    background: yellow;*/
+/*    height: 50vh;*/
+    width: 75vw;
+    display: flex;
+    overflow-x: scroll;
+    padding: 10px 10px;
+    align-items: center;
+/*    scroll-padding: -200px;*/
+}
+
+.gallery::-webkit-scrollbar{
+    display: none;
+}
+
+.gallery div img{
+    width: 320px;
+    height: 320px;
+/*    filter: grayscale(100%);*/
+    transition: trasform 10s;
+    border-radius: 10px;
+}
+
+.gallery div img:hover{
+/*    filter: grayscale(0);*/
+    cursor: pointer;
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+
+.gallery div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+
+
+.footer {
+    align-items: center;
+    text-align: center;
+    padding: 22px 0px;
+/*    margin-top: 30px;*/
+/*    margin-bottom: 30px;*/
+    font-size: 1.1em;
+    background: #E0E0E0;
+    height: 70px;
+    width: 100%;
+/*    color: #fff;*/
+}
+
